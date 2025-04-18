@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Minio;
 using MinioExample.Services;
 using System.IO;
 using System.Threading.Tasks;

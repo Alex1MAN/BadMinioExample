@@ -42,6 +42,7 @@ namespace MinioExample.Services
         {
             var presignedUrl = await _minioClient.PresignedGetObjectAsync(new PresignedGetObjectArgs()
                 .WithBucket(bucketName)
+                .WithExpiry(3600)
                 .WithObject(objectName));
             return presignedUrl;
         }
